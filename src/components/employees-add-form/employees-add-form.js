@@ -36,7 +36,7 @@ class EmployeesAddForm extends Component {
                     //     e.preventDefault();
                     //     onAdd()
                     // }}
-                    className="add-form d-flex"
+                    className="add-form d-flex" //почему сюда вставлем а не в кнопку
                     onSubmit = {this.onSubmit}> 
                     <input type="text"
                         className="form-control new-post-label"
