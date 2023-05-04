@@ -18,6 +18,7 @@ class EmployeesAddForm extends Component {
 
     onSubmit = (e) => { // вот этот кусочек непонятно почему здесь и почему только имя и зп
         e.preventDefault();
+        if (this.state.name.length < 3 || !this.state.salary) return; 
         this.props.onAdd(this.state.name, this.state.salary);
         this.setState({
             name: '',
